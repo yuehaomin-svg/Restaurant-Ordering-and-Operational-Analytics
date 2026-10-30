@@ -1,0 +1,15 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.db
+*.sqlite3
+.DS_Store
+data/raw/
+data/processed/
+# Exception: the 1,000-order demo snapshot shipped with the Streamlit demo
+!data/restaurant_demo.sqlite3

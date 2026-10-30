@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="640" viewBox="0 0 900 640">
+<rect width="900" height="640" fill="#ffffff"/>
+<text x="32" y="44" font-family="Segoe UI, Arial" font-size="24" font-weight="700" fill="#17232f">Menu sales contribution (HKD)</text>
+<text x="32" y="104" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">Seafood Pasta</text>
+<rect x="270" y="86" width="520.00" height="26" rx="6" fill="#dc7b3c"/>
+<text x="800.00" y="104" font-family="Segoe UI, Arial" font-size="13" fill="#667582">62225.000</text>
+<text x="32" y="156" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">Grilled Chicken</text>
+<rect x="270" y="138" width="432.41" height="26" rx="6" fill="#246b8e"/>
+<text x="712.41" y="156" font-family="Segoe UI, Arial" font-size="13" fill="#667582">51744.000</text>
+<text x="32" y="208" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">Beef Burger</text>
+<rect x="270" y="190" width="431.03" height="26" rx="6" fill="#1e827a"/>
+<text x="711.03" y="208" font-family="Segoe UI, Arial" font-size="13" fill="#667582">51578.000</text>
+<text x="32" y="260" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">Vegetable Curry</text>
+<rect x="270" y="242" width="375.45" height="26" rx="6" fill="#7b61a8"/>
+<text x="655.45" y="260" font-family="Segoe UI, Arial" font-size="13" fill="#667582">44928.000</text>
+<text x="32" y="312" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">Chicken Wings</text>
+<rect x="270" y="294" width="269.80" height="26" rx="6" fill="#b44f62"/>
+<text x="549.80" y="312" font-family="Segoe UI, Arial" font-size="13" fill="#667582">32285.000</text>
+<text x="32" y="364" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">Tomato Soup</text>
+<rect x="270" y="346" width="224.98" height="26" rx="6" fill="#dc7b3c"/>
+<text x="504.98" y="364" font-family="Segoe UI, Arial" font-size="13" fill="#667582">26922.000</text>
+<text x="32" y="416" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">Spring Rolls</text>
+<rect x="270" y="398" width="183.23" height="26" rx="6" fill="#246b8e"/>
+<text x="463.23" y="416" font-family="Segoe UI, Arial" font-size="13" fill="#667582">21926.000</text>
+<text x="32" y="468" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">Coffee</text>
+<rect x="270" y="450" width="146.28" height="26" rx="6" fill="#1e827a"/>
+<text x="426.28" y="468" font-family="Segoe UI, Arial" font-size="13" fill="#667582">17504.000</text>
+<text x="32" y="520" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">Iced Lemon Tea</text>
+<rect x="270" y="502" width="131.02" height="26" rx="6" fill="#7b61a8"/>
+<text x="411.02" y="520" font-family="Segoe UI, Arial" font-size="13" fill="#667582">15678.000</text>
+<text x="32" y="572" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">Sparkling Water</text>
+<rect x="270" y="554" width="116.19" height="26" rx="6" fill="#b44f62"/>
+<text x="396.19" y="572" font-family="Segoe UI, Arial" font-size="13" fill="#667582">13904.000</text>
+</svg>

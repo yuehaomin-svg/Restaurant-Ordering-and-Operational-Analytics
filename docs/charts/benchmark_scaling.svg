@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="820" viewBox="0 0 900 820">
+<rect width="900" height="820" fill="#ffffff"/>
+<text x="32" y="44" font-family="Segoe UI, Arial" font-size="24" font-weight="700" fill="#17232f">Query latency scaling by data size (milliseconds)</text>
+<text x="32" y="86" font-family="Segoe UI, Arial" font-size="15" font-weight="700" fill="#17232f">customer_frequency</text>
+<line x1="145" y1="164" x2="815" y2="164" stroke="#dfe6e9"/>
+<circle cx="190" cy="159.65" r="5" fill="#dc7b3c"/>
+<text x="190" y="148.65" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#667582">3.4</text>
+<circle cx="465" cy="149.76" r="5" fill="#dc7b3c"/>
+<text x="465" y="138.76" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#667582">11.0</text>
+<circle cx="740" cy="104.68" r="5" fill="#dc7b3c"/>
+<text x="740" y="93.68" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#667582">45.8</text>
+<polyline points="190.00,159.65 465.00,149.76 740.00,104.68" fill="none" stroke="#dc7b3c" stroke-width="3"/>
+<text x="32" y="222" font-family="Segoe UI, Arial" font-size="15" font-weight="700" fill="#17232f">daily_sales</text>
+<line x1="145" y1="300" x2="815" y2="300" stroke="#dfe6e9"/>
+<circle cx="190" cy="296.80" r="5" fill="#246b8e"/>
+<text x="190" y="285.80" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#667582">2.0</text>
+<circle cx="465" cy="284.44" r="5" fill="#246b8e"/>
+<text x="465" y="273.44" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#667582">9.9</text>
+<circle cx="740" cy="240.68" r="5" fill="#246b8e"/>
+<text x="740" y="229.68" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#667582">37.9</text>
+<polyline points="190.00,296.80 465.00,284.44 740.00,240.68" fill="none" stroke="#246b8e" stroke-width="3"/>
+<text x="32" y="358" font-family="Segoe UI, Arial" font-size="15" font-weight="700" fill="#17232f">hourly_demand</text>
+<line x1="145" y1="436" x2="815" y2="436" stroke="#dfe6e9"/>
+<circle cx="190" cy="432.83" r="5" fill="#1e827a"/>
+<text x="190" y="421.83" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#667582">1.7</text>
+<circle cx="465" cy="420.87" r="5" fill="#1e827a"/>
+<text x="465" y="409.87" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#667582">8.3</text>
+<circle cx="740" cy="376.68" r="5" fill="#1e827a"/>
+<text x="740" y="365.68" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#667582">32.5</text>
+<polyline points="190.00,432.83 465.00,420.87 740.00,376.68" fill="none" stroke="#1e827a" stroke-width="3"/>
+<text x="32" y="494" font-family="Segoe UI, Arial" font-size="15" font-weight="700" fill="#17232f">menu_performance</text>
+<line x1="145" y1="572" x2="815" y2="572" stroke="#dfe6e9"/>
+<circle cx="190" cy="570.59" r="5" fill="#7b61a8"/>
+<text x="190" y="559.59" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#667582">10.9</text>
+<circle cx="465" cy="560.05" r="5" fill="#7b61a8"/>
+<text x="465" y="549.05" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#667582">91.8</text>
+<circle cx="740" cy="512.68" r="5" fill="#7b61a8"/>
+<text x="740" y="501.68" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#667582">455.7</text>
+<polyline points="190.00,570.59 465.00,560.05 740.00,512.68" fill="none" stroke="#7b61a8" stroke-width="3"/>
+<text x="32" y="630" font-family="Segoe UI, Arial" font-size="15" font-weight="700" fill="#17232f">recent_orders</text>
+<line x1="145" y1="708" x2="815" y2="708" stroke="#dfe6e9"/>
+<circle cx="190" cy="703.07" r="5" fill="#b44f62"/>
+<text x="190" y="692.07" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#667582">1.8</text>
+<circle cx="465" cy="691.67" r="5" fill="#b44f62"/>
+<text x="465" y="680.67" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#667582">6.0</text>
+<circle cx="740" cy="648.68" r="5" fill="#b44f62"/>
+<text x="740" y="637.68" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#667582">21.7</text>
+<polyline points="190.00,703.07 465.00,691.67 740.00,648.68" fill="none" stroke="#b44f62" stroke-width="3"/>
+<text x="190" y="802" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#667582">1,000 orders</text>
+<text x="465" y="802" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#667582">10,000 orders</text>
+<text x="740" y="802" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#667582">50,000 orders</text>
+</svg>

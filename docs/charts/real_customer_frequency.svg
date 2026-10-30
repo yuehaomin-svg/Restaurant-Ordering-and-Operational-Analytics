@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="328" viewBox="0 0 900 328">
+<rect width="900" height="328" fill="#ffffff"/>
+<text x="32" y="44" font-family="Segoe UI, Arial" font-size="24" font-weight="700" fill="#17232f">Real transaction customer frequency bands</text>
+<text x="32" y="104" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">1 order</text>
+<rect x="270" y="86" width="404.11" height="26" rx="6" fill="#dc7b3c"/>
+<text x="684.11" y="104" font-family="Segoe UI, Arial" font-size="13" fill="#667582">1461.000</text>
+<text x="32" y="156" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">2-3 orders</text>
+<rect x="270" y="138" width="414.06" height="26" rx="6" fill="#246b8e"/>
+<text x="694.06" y="156" font-family="Segoe UI, Arial" font-size="13" fill="#667582">1497.000</text>
+<text x="32" y="208" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">4-10 orders</text>
+<rect x="270" y="190" width="520.00" height="26" rx="6" fill="#1e827a"/>
+<text x="800.00" y="208" font-family="Segoe UI, Arial" font-size="13" fill="#667582">1880.000</text>
+<text x="32" y="260" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">11+ orders</text>
+<rect x="270" y="242" width="305.36" height="26" rx="6" fill="#7b61a8"/>
+<text x="585.36" y="260" font-family="Segoe UI, Arial" font-size="13" fill="#667582">1104.000</text>
+</svg>

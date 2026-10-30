@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant Analytics Platform</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">DSC5003 DATABASE APPLICATION</p>
+      <h1>Restaurant Operations & Analytics</h1>
+    </div>
+    <div class="system-status"><span></span> MySQL-backed system</div>
+  </header>
+
+  <nav class="tabs" aria-label="Application sections">
+    <button class="tab active" data-view="operations">Operations</button>
+    <button class="tab" data-view="catalog">Menu & Tables</button>
+    <button class="tab" data-view="analytics">Analytics</button>
+    <a class="api-link" href="/docs" target="_blank">API documentation</a>
+  </nav>
+
+  <main>
+    <section class="view active" id="operations">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">TRANSACTION WORKFLOW</p>
+          <h2>Create, update and check out an order</h2>
+        </div>
+        <button class="secondary" id="refresh-orders">Refresh orders</button>
+      </div>
+
+      <div class="operations-grid">
+        <article class="card order-builder">
+          <div class="card-title">
+            <div>
+              <span class="step">01</span>
+              <h3>Start an order</h3>
+            </div>
+          </div>
+          <label>Available table
+            <select id="order-table"></select>
+          </label>
+          <label>Customer phone <span>optional</span>
+            <input id="customer-phone" placeholder="e.g. 13800000000">
+          </label>
+          <button class="primary full-width" id="create-order">Create order</button>
+
+          <div class="current-order" id="current-order">
+            <p class="empty-state">No active order selected.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-title">
+            <div>
+              <span class="step">02</span>
+              <h3>Add menu items</h3>
+            </div>
+          </div>
+          <label>Menu item
+            <select id="order-menu-item"></select>
+          </label>
+          <div class="form-row">
+            <label>Quantity
+              <input id="order-quantity" type="number" value="1" min="1" max="100">
+            </label>
+            <button class="primary" id="add-order-item">Add item</button>
+          </div>
+
+          <div class="card-title compact">
+            <div>
+              <span class="step">03</span>
+              <h3>Check out</h3>
+            </div>
+          </div>
+          <label>Payment method
+            <select id="payment-method">
+              <option value="cash">Cash</option>
+              <option value="card">Card</option>
+              <option value="mobile">Mobile payment</option>
+            </select>
+          </label>
+          <button class="primary full-width" id="checkout-order">Check out order</button>
+        </article>
+
+        <article class="card wide">
+          <div class="card-title">
+            <div>
+              <span class="step">04</span>
+              <h3>Recent orders</h3>
+            </div>
+            <span class="muted" id="order-count">0 records</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Order</th><th>Table</th><th>Status</th><th>Items</th><th>Total</th><th>Placed</th></tr>
+              </thead>
+              <tbody id="orders-body"></tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="view" id="catalog">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MASTER DATA</p>
+          <h2>Manage menu items and dining tables</h2>
+        </div>
+      </div>
+      <div class="catalog-grid">
+        <article class="card">
+          <div class="card-title"><h3>Add category</h3></div>
+          <label>Category name<input id="category-name" placeholder="e.g. Main dishes"></label>
+          <button class="primary" id="create-category">Create category</button>
+          <div class="data-list" id="categories-list"></div>
+        </article>
+        <article class="card">
+          <div class="card-title"><h3>Add menu item</h3></div>
+          <label>Category<select id="menu-category"></select></label>
+          <label>Item name<input id="menu-item-name" placeholder="e.g. Grilled chicken"></label>
+          <label>Price<input id="menu-item-price" type="number" min="0" step="0.01" placeholder="48.00"></label>
+          <button class="primary" id="create-menu-item">Create menu item</button>
+          <div class="table-wrap compact-table">
+            <table>
+              <thead><tr><th>Item</th><th>Category</th><th>Price</th><th>Available</th></tr></thead>
+              <tbody id="menu-items-body"></tbody>
+            </table>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-title"><h3>Add dining table</h3></div>
+          <label>Table name<input id="table-name" placeholder="e.g. T-09"></label>
+          <label>Capacity<input id="table-capacity" type="number" min="1" value="4"></label>
+          <button class="primary" id="create-table">Create table</button>
+          <div class="table-grid" id="tables-grid"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="view" id="analytics">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PRODUCT ANALYTICS</p>
+          <h2>From order data to operating decisions</h2>
+        </div>
+        <div class="analytics-controls">
+          <label>From<input id="analytics-start" type="date"></label>
+          <label>To<input id="analytics-end" type="date"></label>
+          <button class="primary" id="apply-analytics-filter">Apply</button>
+          <button class="secondary" id="refresh-analytics">Refresh</button>
+        </div>
+      </div>
+      <div class="kpi-grid">
+        <article class="kpi"><span>Gross sales</span><strong id="kpi-gross-sales">0.00</strong><small>completed order amount</small></article>
+        <article class="kpi"><span>Net sales</span><strong id="kpi-net-sales">0.00</strong><small>gross sales minus refunds</small></article>
+        <article class="kpi"><span>Orders</span><strong id="kpi-orders">0</strong><small>paid and refunded orders</small></article>
+        <article class="kpi"><span>Average order value</span><strong id="kpi-aov">0.00</strong><small>revenue per order</small></article>
+        <article class="kpi"><span>Refunds</span><strong id="kpi-refunds">0.00</strong><small>recorded refund amount</small></article>
+        <article class="kpi"><span>Refund rate</span><strong id="kpi-refund-rate">0.0%</strong><small>refunds divided by gross sales</small></article>
+      </div>
+      <div class="analytics-grid">
+        <article class="card wide">
+          <div class="card-title"><h3>Menu engineering</h3><span class="muted">demand versus net-sales contribution</span></div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Menu item</th><th>Category</th><th>Segment</th><th>Quantity</th><th>Net sales</th><th>Recommended action</th></tr></thead>
+              <tbody id="menu-performance-body"></tbody>
+            </table>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-title"><h3>Hourly demand</h3><span class="muted">order count by hour</span></div>
+          <div class="bar-chart" id="hourly-chart"></div>
+        </article>
+        <article class="card">
+          <div class="card-title"><h3>Customer repeat behavior</h3><span class="muted">identified customers only</span></div>
+          <div class="repeat-kpis">
+            <div><span>Repeat customer rate</span><strong id="repeat-customer-rate">0.0%</strong></div>
+            <div><span>Repeat order rate</span><strong id="repeat-order-rate">0.0%</strong></div>
+            <div><span>Orders per customer</span><strong id="repeat-average-orders">0.0</strong></div>
+            <div><span>Repeat-customer net sales</span><strong id="repeat-net-sales">0.00</strong></div>
+          </div>
+          <div class="frequency-list" id="repeat-distribution"></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

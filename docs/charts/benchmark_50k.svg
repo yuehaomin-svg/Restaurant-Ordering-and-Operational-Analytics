@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380">
+<rect width="900" height="380" fill="#ffffff"/>
+<text x="32" y="44" font-family="Segoe UI, Arial" font-size="24" font-weight="700" fill="#17232f">Median query latency at 50,000 orders (ms)</text>
+<text x="32" y="104" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">daily_sales</text>
+<rect x="270" y="86" width="43.19" height="26" rx="6" fill="#dc7b3c"/>
+<text x="323.19" y="104" font-family="Segoe UI, Arial" font-size="13" fill="#667582">37.853</text>
+<text x="32" y="156" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">menu_performance</text>
+<rect x="270" y="138" width="520.00" height="26" rx="6" fill="#246b8e"/>
+<text x="800.00" y="156" font-family="Segoe UI, Arial" font-size="13" fill="#667582">455.747</text>
+<text x="32" y="208" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">hourly_demand</text>
+<rect x="270" y="190" width="37.05" height="26" rx="6" fill="#1e827a"/>
+<text x="317.05" y="208" font-family="Segoe UI, Arial" font-size="13" fill="#667582">32.475</text>
+<text x="32" y="260" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">recent_orders</text>
+<rect x="270" y="242" width="24.80" height="26" rx="6" fill="#7b61a8"/>
+<text x="304.80" y="260" font-family="Segoe UI, Arial" font-size="13" fill="#667582">21.733</text>
+<text x="32" y="312" font-family="Segoe UI, Arial" font-size="14" fill="#17232f">customer_frequency</text>
+<rect x="270" y="294" width="52.23" height="26" rx="6" fill="#b44f62"/>
+<text x="332.23" y="312" font-family="Segoe UI, Arial" font-size="13" fill="#667582">45.774</text>
+</svg>

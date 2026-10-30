@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="900" height="520" fill="#ffffff"/>
+<text x="32" y="44" font-family="Segoe UI, Arial" font-size="24" font-weight="700" fill="#17232f">Hourly order demand</text>
+<line x1="70" y1="440" x2="850" y2="440" stroke="#dfe6e9"/>
+<rect x="95.00" y="360.00" width="54" height="80.00" rx="7" fill="#dc7b3c"/>
+<text x="122.00" y="350.00" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#667582">56</text>
+<text x="122.00" y="468" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#17232f">11</text>
+<rect x="197.86" y="200.00" width="54" height="240.00" rx="7" fill="#dc7b3c"/>
+<text x="224.86" y="190.00" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#667582">168</text>
+<text x="224.86" y="468" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#17232f">12</text>
+<rect x="300.71" y="255.71" width="54" height="184.29" rx="7" fill="#dc7b3c"/>
+<text x="327.71" y="245.71" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#667582">129</text>
+<text x="327.71" y="468" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#17232f">13</text>
+<rect x="403.57" y="257.14" width="54" height="182.86" rx="7" fill="#dc7b3c"/>
+<text x="430.57" y="247.14" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#667582">128</text>
+<text x="430.57" y="468" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#17232f">18</text>
+<rect x="506.43" y="110.00" width="54" height="330.00" rx="7" fill="#dc7b3c"/>
+<text x="533.43" y="100.00" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#667582">231</text>
+<text x="533.43" y="468" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#17232f">19</text>
+<rect x="609.29" y="182.86" width="54" height="257.14" rx="7" fill="#dc7b3c"/>
+<text x="636.29" y="172.86" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#667582">180</text>
+<text x="636.29" y="468" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#17232f">20</text>
+<rect x="712.14" y="285.71" width="54" height="154.29" rx="7" fill="#dc7b3c"/>
+<text x="739.14" y="275.71" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#667582">108</text>
+<text x="739.14" y="468" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#17232f">21</text>
+</svg>
