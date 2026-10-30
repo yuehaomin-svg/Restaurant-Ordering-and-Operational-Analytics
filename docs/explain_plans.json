@@ -1,0 +1,267 @@
+{
+  "daily_sales": {
+    "query_block": {
+      "select_id": 1,
+      "cost_info": {
+        "query_cost": "1101.75"
+      },
+      "ordering_operation": {
+        "using_filesort": false,
+        "grouping_operation": {
+          "using_temporary_table": true,
+          "using_filesort": true,
+          "cost_info": {
+            "sort_cost": "1000.00"
+          },
+          "table": {
+            "table_name": "orders",
+            "access_type": "ALL",
+            "possible_keys": [
+              "ix_orders_status_placed_at",
+              "ix_orders_customer_placed_at"
+            ],
+            "rows_examined_per_scan": 1000,
+            "rows_produced_per_join": 1000,
+            "filtered": "100.00",
+            "cost_info": {
+              "read_cost": "1.75",
+              "eval_cost": "100.00",
+              "prefix_cost": "101.75",
+              "data_read_per_join": "164K"
+            },
+            "used_columns": [
+              "id",
+              "status",
+              "total_amount",
+              "placed_at"
+            ],
+            "attached_condition": "((`restaurant_analytics`.`orders`.`status` in ('paid','partially_refunded','refunded')) and (`restaurant_analytics`.`orders`.`placed_at` >= TIMESTAMP'2026-09-14 21:49:05.694901') and (`restaurant_analytics`.`orders`.`placed_at` < TIMESTAMP'2026-10-25 21:49:05.694901'))"
+          }
+        }
+      }
+    }
+  },
+  "menu_performance": {
+    "query_block": {
+      "select_id": 1,
+      "cost_info": {
+        "query_cost": "1439.15"
+      },
+      "ordering_operation": {
+        "using_filesort": true,
+        "grouping_operation": {
+          "using_temporary_table": true,
+          "using_filesort": false,
+          "nested_loop": [
+            {
+              "table": {
+                "table_name": "menu_items",
+                "access_type": "ALL",
+                "possible_keys": [
+                  "PRIMARY"
+                ],
+                "rows_examined_per_scan": 10,
+                "rows_produced_per_join": 10,
+                "filtered": "100.00",
+                "cost_info": {
+                  "read_cost": "0.25",
+                  "eval_cost": "1.00",
+                  "prefix_cost": "1.25",
+                  "data_read_per_join": "15K"
+                },
+                "used_columns": [
+                  "id",
+                  "name"
+                ]
+              }
+            },
+            {
+              "table": {
+                "table_name": "order_items",
+                "access_type": "ref",
+                "possible_keys": [
+                  "uq_order_items_order_menu_item",
+                  "ix_order_items_menu_item_id"
+                ],
+                "key": "ix_order_items_menu_item_id",
+                "used_key_parts": [
+                  "menu_item_id"
+                ],
+                "key_length": "4",
+                "ref": [
+                  "restaurant_analytics.menu_items.id"
+                ],
+                "rows_examined_per_scan": 301,
+                "rows_produced_per_join": 3012,
+                "filtered": "100.00",
+                "cost_info": {
+                  "read_cost": "82.50",
+                  "eval_cost": "301.20",
+                  "prefix_cost": "384.95",
+                  "data_read_per_join": "94K"
+                },
+                "used_columns": [
+                  "id",
+                  "order_id",
+                  "menu_item_id",
+                  "quantity",
+                  "line_total"
+                ]
+              }
+            },
+            {
+              "table": {
+                "table_name": "orders",
+                "access_type": "eq_ref",
+                "possible_keys": [
+                  "PRIMARY",
+                  "ix_orders_status_placed_at"
+                ],
+                "key": "PRIMARY",
+                "used_key_parts": [
+                  "id"
+                ],
+                "key_length": "4",
+                "ref": [
+                  "restaurant_analytics.order_items.order_id"
+                ],
+                "rows_examined_per_scan": 1,
+                "rows_produced_per_join": 3012,
+                "filtered": "100.00",
+                "cost_info": {
+                  "read_cost": "753.00",
+                  "eval_cost": "301.20",
+                  "prefix_cost": "1439.15",
+                  "data_read_per_join": "494K"
+                },
+                "used_columns": [
+                  "id",
+                  "status",
+                  "placed_at"
+                ],
+                "attached_condition": "((`restaurant_analytics`.`orders`.`status` in ('paid','partially_refunded','refunded')) and (`restaurant_analytics`.`orders`.`placed_at` >= TIMESTAMP'2026-09-14 21:49:05.694901') and (`restaurant_analytics`.`orders`.`placed_at` < TIMESTAMP'2026-10-25 21:49:05.694901'))"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "hourly_demand": {
+    "query_block": {
+      "select_id": 1,
+      "cost_info": {
+        "query_cost": "1101.75"
+      },
+      "ordering_operation": {
+        "using_filesort": false,
+        "grouping_operation": {
+          "using_temporary_table": true,
+          "using_filesort": true,
+          "cost_info": {
+            "sort_cost": "1000.00"
+          },
+          "table": {
+            "table_name": "orders",
+            "access_type": "ALL",
+            "possible_keys": [
+              "ix_orders_status_placed_at",
+              "ix_orders_customer_placed_at"
+            ],
+            "rows_examined_per_scan": 1000,
+            "rows_produced_per_join": 1000,
+            "filtered": "100.00",
+            "cost_info": {
+              "read_cost": "1.75",
+              "eval_cost": "100.00",
+              "prefix_cost": "101.75",
+              "data_read_per_join": "164K"
+            },
+            "used_columns": [
+              "id",
+              "status",
+              "total_amount",
+              "placed_at"
+            ],
+            "attached_condition": "((`restaurant_analytics`.`orders`.`status` in ('paid','partially_refunded','refunded')) and (`restaurant_analytics`.`orders`.`placed_at` >= TIMESTAMP'2026-09-14 21:49:05.694901') and (`restaurant_analytics`.`orders`.`placed_at` < TIMESTAMP'2026-10-25 21:49:05.694901'))"
+          }
+        }
+      }
+    }
+  },
+  "recent_orders": {
+    "query_block": {
+      "select_id": 1,
+      "cost_info": {
+        "query_cost": "101.75"
+      },
+      "ordering_operation": {
+        "using_filesort": true,
+        "table": {
+          "table_name": "orders",
+          "access_type": "ALL",
+          "possible_keys": [
+            "ix_orders_status_placed_at"
+          ],
+          "rows_examined_per_scan": 1000,
+          "rows_produced_per_join": 1000,
+          "filtered": "100.00",
+          "cost_info": {
+            "read_cost": "1.75",
+            "eval_cost": "100.00",
+            "prefix_cost": "101.75",
+            "data_read_per_join": "164K"
+          },
+          "used_columns": [
+            "id",
+            "order_no",
+            "status",
+            "total_amount",
+            "placed_at"
+          ],
+          "attached_condition": "(`restaurant_analytics`.`orders`.`status` in ('paid','partially_refunded','refunded'))"
+        }
+      }
+    }
+  },
+  "customer_frequency": {
+    "query_block": {
+      "select_id": 1,
+      "cost_info": {
+        "query_cost": "101.75"
+      },
+      "ordering_operation": {
+        "using_temporary_table": true,
+        "using_filesort": true,
+        "grouping_operation": {
+          "using_filesort": false,
+          "table": {
+            "table_name": "orders",
+            "access_type": "ALL",
+            "possible_keys": [
+              "ix_orders_status_placed_at",
+              "ix_orders_customer_placed_at"
+            ],
+            "rows_examined_per_scan": 1000,
+            "rows_produced_per_join": 599,
+            "filtered": "60.00",
+            "cost_info": {
+              "read_cost": "41.75",
+              "eval_cost": "60.00",
+              "prefix_cost": "101.75",
+              "data_read_per_join": "98K"
+            },
+            "used_columns": [
+              "id",
+              "customer_id",
+              "status",
+              "total_amount",
+              "placed_at"
+            ],
+            "attached_condition": "((`restaurant_analytics`.`orders`.`customer_id` is not null) and (`restaurant_analytics`.`orders`.`status` in ('paid','partially_refunded','refunded')) and (`restaurant_analytics`.`orders`.`placed_at` >= TIMESTAMP'2026-09-14 21:49:05.694901') and (`restaurant_analytics`.`orders`.`placed_at` < TIMESTAMP'2026-10-25 21:49:05.694901'))"
+          }
+        }
+      }
+    }
+  }
+}

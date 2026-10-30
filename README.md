@@ -126,5 +126,22 @@ Open:
 
 The database container uses host port `3308` to avoid conflicting with other local MySQL instances.
 
+## Streamlit Demo
+
+`streamlit_app.py` is a browser-ready analytics demo backed by the committed `data/restaurant_demo.sqlite3` snapshot of 1,000 simulated orders and 3,032 order lines. It is a read-only presentation layer for product, customer, timing, refund and order exploration.
+
+```powershell
+python -m venv .venv-streamlit
+.\.venv-streamlit\Scripts\Activate.ps1
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+Streamlit Community Cloud should use `streamlit_app.py` as the main file and install `requirements.txt`. The application dependencies for the FastAPI system are kept separately in `requirements-app.txt`.
+
+## Static Portfolio Summary
+
+`index.html` is a self-contained one-page portfolio summary. It can be opened directly in a browser or hosted through GitHub Pages from the repository root.
+
 
 

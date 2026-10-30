@@ -1,0 +1,18 @@
+{
+  "source_file_sheets": [
+    "Year 2009-2010",
+    "Year 2010-2011"
+  ],
+  "raw_rows": 1067371,
+  "valid_rows": 1067371,
+  "excluded_rows": 0,
+  "return_rows": 22951,
+  "rows_with_customer_id": 824364,
+  "rows_without_customer_id": 243007,
+  "duplicate_source_rows": 34337,
+  "date_min": "2009-12-01T07:45:00",
+  "date_max": "2011-12-09T12:50:00",
+  "gross_sales": 20972968.12,
+  "refund_amount": 1685717.57,
+  "net_sales": 19287250.55
+}

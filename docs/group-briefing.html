@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DSC5003 小组项目快速汇报</title>
+  <title>Restaurant Analytics · Portfolio Case Study</title>
   <style>
     :root {
       --ink: #17232f;
@@ -208,12 +208,12 @@
 <body>
   <header class="hero">
     <div class="hero-inner">
-      <p class="eyebrow">DSC5003 · GROUP PROJECT BRIEFING</p>
+      <p class="eyebrow">DATA ANALYTICS · PORTFOLIO CASE STUDY</p>
       <h1>餐厅数据库系统<br>＋产品分析方法验证</h1>
-      <p>用 5 分钟看懂项目做什么、现在完成了什么、指标怎么算、真实数据验证了什么，以及接下来小组需要一起决定什么。</p>
+      <p>用 5 分钟看懂项目如何可靠记录餐厅交易、建立统一指标、发现业务问题，并用真实行为数据验证分析方法。</p>
       <div class="hero-actions">
         <button class="button primary" onclick="window.print()">打印 / 导出 PDF</button>
-        <button class="button" onclick="copyFeedback()">复制反馈清单</button>
+        <button class="button" onclick="copySummary()">复制项目摘要</button>
       </div>
     </div>
   </header>
@@ -223,9 +223,8 @@
     <a href="#status">当前进度</a>
     <a href="#metrics">核心指标</a>
     <a href="#validation">真实数据验证</a>
-    <a href="#course">课程评分</a>
-    <a href="#plan">剩余计划</a>
-    <a href="#feedback">请组员反馈</a>
+    <a href="#course">工程证据</a>
+    <a href="#plan">项目边界</a>
   </nav>
 
   <main>
@@ -239,12 +238,12 @@
       </div>
       <div class="card">
         <h3>Restaurant Ordering and Management System with Operational Analytics</h3>
-        <p>我们用 <strong>MySQL + FastAPI + Web UI</strong> 实现餐厅菜单、桌台、点单、结账和退款，再把交易数据转换成净销售、产品工程、小时需求和顾客复购指标。课程部分验证数据库系统能力，真实交易数据部分验证这些分析方法能否迁移到真实行为。</p>
+        <p>项目使用 <strong>MySQL + FastAPI + Web UI</strong> 实现餐厅菜单、桌台、点单、结账和退款，再把交易数据转换成净销售、产品工程、小时需求和顾客复购指标。系统数据验证数据库与分析链路，真实交易数据验证这些分析方法能否迁移到真实行为。</p>
         <div class="formula">项目故事：可靠记录交易 → 建立统一指标 → 发现问题 → 给出行动建议 → 用真实数据验证方法</div>
       </div>
       <div class="grid" style="margin-top:18px">
         <article class="card">
-          <span class="status">课程核心</span>
+          <span class="status">工程核心</span>
           <h3 style="margin-top:14px">数据库应用开发</h3>
           <p>满足 Track 1 的全栈应用、数据建模、有意义查询和工程实践要求。</p>
         </article>
@@ -298,8 +297,8 @@
               <li>核心事务测试：3 项通过</li>
               <li>5 个查询的 MySQL 执行计划</li>
               <li>指标字典和方法验证报告</li>
-              <li>课程报告初稿</li>
-              <li>5–8 分钟演示脚本</li>
+              <li>完整项目报告与指标字典</li>
+              <li>产品、顾客、时点与退款分析</li>
             </ul>
           </div>
         </div>
@@ -398,73 +397,63 @@
     <section id="course">
       <div class="section-title">
         <div>
-          <p class="eyebrow">05 · GRADING ALIGNMENT</p>
-          <h2>课程评分怎么覆盖</h2>
+          <p class="eyebrow">05 · ENGINEERING EVIDENCE</p>
+          <h2>项目的技术与分析证据</h2>
         </div>
       </div>
       <table class="comparison">
-        <thead><tr><th>评分项</th><th>占比</th><th>对应产出</th><th>状态</th></tr></thead>
+        <thead><tr><th>能力</th><th>展示内容</th><th>可核对证据</th></tr></thead>
         <tbody>
-          <tr><td><strong>Source Code</strong></td><td>30%</td><td>Schema、后端、前端、数据生成、测试、README、GitHub</td><td><span class="status">主体完成</span></td></tr>
-          <tr><td><strong>Video</strong></td><td>20%</td><td>5–8 分钟展示 UI、查询、数据流和后端</td><td><span class="status pending">待录制</span></td></tr>
-          <tr><td><strong>Written Report</strong></td><td>50%</td><td>概述、架构、ERD、范式、索引、查询、实验、挑战、引用</td><td><span class="status pending">已有初稿</span></td></tr>
+          <tr><td><strong>数据建模</strong></td><td>完整交易生命周期、价格快照、退款历史</td><td>10 张业务表、ERD、外键和约束</td></tr>
+          <tr><td><strong>SQL 分析</strong></td><td>销售、菜单工程、小时需求、顾客复购</td><td>3 个分析视图、查询计划和执行结果</td></tr>
+          <tr><td><strong>可靠性</strong></td><td>事务边界、并发桌台保护、异常流程</td><td>自动化测试和并发验证结果</td></tr>
+          <tr><td><strong>性能</strong></td><td>1K、10K、50K 数据规模与索引选择</td><td>基准测试、索引实验和 `EXPLAIN` 输出</td></tr>
         </tbody>
       </table>
       <div class="callout" style="margin-top:18px">
-        <h3>报告仍然是最高优先级</h3>
-        <p>技术做得多不等于分数高。所有功能、测试和图表都必须被报告清楚地解释：为什么这样设计、如何验证、结果意味着什么、限制是什么。</p>
+        <h3>分析不只展示图表</h3>
+        <p>每个指标都保留清晰口径、适用边界和行动解释。项目强调从可靠交易数据出发，经过统一计算得到可讨论、可复核的业务结论。</p>
       </div>
     </section>
 
     <section id="plan">
       <div class="section-title">
         <div>
-          <p class="eyebrow">06 · REMAINING WORK</p>
-          <h2>接下来还要做什么</h2>
+          <p class="eyebrow">06 · SCOPE & LIMITATIONS</p>
+          <h2>项目边界与后续方向</h2>
         </div>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item"><div class="timeline-dot">01</div><h3>组员确认方向与分工</h3><p>确认“数据库系统＋真实行为验证”结构，锁定每个人对报告和代码的贡献。</p></div>
-        <div class="timeline-item"><div class="timeline-dot">02</div><h3>完成 Power BI 看板</h3><p>四个页面：Executive Overview、Product Strategy、Customer Growth、Timing & Operations。</p></div>
-        <div class="timeline-item"><div class="timeline-dot">03</div><h3>整合最终报告 PDF</h3><p>补齐成员专业、贡献声明、正式图表、引用和 GitHub / Video 链接。</p></div>
-        <div class="timeline-item"><div class="timeline-dot">04</div><h3>录制 5–8 分钟演示</h3><p>业务问题 → 点单结账 → 分析看板 → 性能与并发结果 → 总结。</p></div>
-        <div class="timeline-item"><div class="timeline-dot">05</div><h3>GitHub 与提交检查</h3><p>清理数据、密钥和临时文件，从全新环境验证 README，再提交链接。</p></div>
-      </div>
-    </section>
-
-    <section id="feedback">
-      <div class="section-title">
-        <div>
-          <p class="eyebrow">07 · TEAM FEEDBACK</p>
-          <h2>请组员重点反馈这 5 件事</h2>
-        </div>
-        <button class="button" style="color:var(--navy);border-color:var(--line);background:white" onclick="copyFeedback()">复制反馈清单</button>
       </div>
       <div class="grid two">
-        <div class="question"><strong>1</strong><div><h3>是否认可项目结构？</h3><p>课程核心是餐厅数据库系统，真实零售数据作为“分析方法外部验证”，两者分开表述。</p></div></div>
-        <div class="question"><strong>2</strong><div><h3>是否认可不再扩张功能？</h3><p>建议不做库存、预约、会员积分、外卖、复杂权限和 AI 助手，集中完成报告、BI、视频。</p></div></div>
-        <div class="question"><strong>3</strong><div><h3>分工是否接受？</h3><p>数据库、后端、前端、分析/BI、报告/视频五条线分别负责，并留下可核对的贡献证据。</p></div></div>
-        <div class="question"><strong>4</strong><div><h3>是否有引用或原创性风险？</h3><p>开源项目只作参考，所有外部数据、代码片段、图片和指标定义都必须引用。</p></div></div>
-        <div class="question"><strong>5</strong><div><h3>最终提交日期和负责人？</h3><p>确认正式 deadline、视频上传位置、报告命名、GitHub 仓库 owner 和最终检查人。</p></div></div>
-        <div class="card">
-          <h3>建议回复格式</h3>
-          <div class="formula">方向：同意 / 建议修改
-分工：可接受 / 想调整
-风险：有 / 无
-额外意见：____</div>
-        </div>
+        <article class="card">
+          <h3>当前边界</h3>
+          <ul>
+            <li>UCI 电商数据只用于分析方法验证，不代表餐厅实际经营。</li>
+            <li>没有商品成本，因此产品分析衡量销售贡献，不衡量利润。</li>
+            <li>复购指标只统计带顾客 ID 的交易。</li>
+            <li>公开部署需要增加登录、权限和写入保护。</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>可扩展方向</h3>
+          <ul>
+            <li>建立 Tableau / Power BI 多页面交互看板。</li>
+            <li>增加预测需求、菜单定价和促销实验分析。</li>
+            <li>加入顾客生命周期、留存和流失预警。</li>
+            <li>把部署、鉴权、日志和监控完善为生产化版本。</li>
+          </ul>
+        </article>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="hero-inner">
-      <p><strong>DSC5003 Restaurant Ordering and Management System with Operational Analytics</strong></p>
-      <p class="small">本页只用于小组快速对齐。详细证据包括 SQL schema、事务测试、查询计划、性能实验、指标字典、真实数据验证和报告初稿。</p>
+      <p><strong>Restaurant Ordering and Management System with Operational Analytics</strong></p>
+      <p class="small">Portfolio case study covering SQL schema, transaction tests, query plans, scale experiments, metric governance and real-data method validation.</p>
     </div>
   </footer>
 
-  <div class="toast" id="toast">反馈清单已复制</div>
+  <div class="toast" id="toast">项目摘要已复制</div>
   <script>
     function showToast(message) {
       const toast = document.getElementById("toast");
@@ -473,17 +462,16 @@
       setTimeout(() => toast.classList.remove("show"), 2200);
     }
 
-    async function copyFeedback() {
-      const text = `DSC5003 项目反馈：
-1. 项目结构（餐厅系统＋真实行为验证）：同意 / 建议修改
-2. 功能范围冻结，集中报告、BI、视频：同意 / 建议修改
-3. 数据库、后端、前端、分析/BI、报告/视频分工：接受 / 想调整
-4. 原创性和引用风险：有 / 无
-5. 最终 deadline、GitHub owner、视频位置和最终检查人：请补充
-其他意见：`;
+    async function copySummary() {
+      const text = `Restaurant Analytics Portfolio
+- MySQL + FastAPI restaurant ordering and operational analytics platform
+- 10 business tables and 3 SQL analytical views
+- Gross/net sales, refunds, menu engineering, hourly demand and repeat behavior
+- Transaction, concurrency, scale and query-plan evidence
+- Method validation on 1.07 million UCI Online Retail II transaction lines`;
       try {
         await navigator.clipboard.writeText(text);
-        showToast("反馈清单已复制");
+        showToast("项目摘要已复制");
       } catch {
         showToast("请手动选择页面内容复制");
       }

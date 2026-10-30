@@ -1,0 +1,43 @@
+{
+  "dataset": "UCI Online Retail II",
+  "date_min": "2009-12-01 07:45:00",
+  "date_max": "2011-12-09 12:50:00",
+  "order_count": 53628,
+  "transaction_lines": 1067371,
+  "product_count": 5304,
+  "identified_customers": 5942,
+  "gross_sales": 20972968.12,
+  "refund_amount": 1685717.57,
+  "net_sales": 19287250.55,
+  "refund_rate": 0.0804,
+  "top_product": {
+    "product_code": "22423",
+    "product_name": "REGENCY CAKESTAND 3 TIER",
+    "net_sales": 327813.65
+  },
+  "peak_hour": {
+    "business_hour": 12,
+    "order_count": 8098,
+    "order_share": 0.151
+  },
+  "customer_repeat": {
+    "repeat_customers": 4481,
+    "repeat_customer_rate": 0.7541,
+    "identified_orders": 44876,
+    "repeat_orders": 38934,
+    "repeat_order_rate": 0.8676,
+    "repeat_customer_net_sales": 16254643.57,
+    "frequency_distribution": {
+      "1 order": 1461,
+      "2-3 orders": 1497,
+      "4-10 orders": 1880,
+      "11+ orders": 1104
+    }
+  },
+  "menu_segments": {
+    "Dogs": 3747,
+    "Stars": 813,
+    "Plowhorses": 396,
+    "Puzzles": 348
+  }
+}

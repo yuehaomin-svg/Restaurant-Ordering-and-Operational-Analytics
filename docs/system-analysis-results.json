@@ -1,0 +1,67 @@
+{
+  "dataset": "Deterministic synthetic restaurant orders",
+  "summary": {
+    "order_count": 1000,
+    "gross_sales": "340957.00",
+    "revenue": "340957.00",
+    "refund_total": "13705.00",
+    "net_sales": "327252.00",
+    "average_order_value": "340.96",
+    "refund_rate": "0.0402"
+  },
+  "top_product": {
+    "menu_item_id": 6,
+    "name": "Seafood Pasta",
+    "category_name": "Main Courses",
+    "quantity": "653",
+    "order_count": 324,
+    "gross_sales": "62035.00",
+    "net_sales": "59650.06143712",
+    "menu_segment": "Stars",
+    "recommendation": "Keep prominent and test incremental price or premium variants."
+  },
+  "peak_hour": {
+    "hour": 19,
+    "orders": 217,
+    "order_share": 0.217,
+    "gross_sales": "73972.00",
+    "refund_total": "3709.00",
+    "net_sales": "70263.00"
+  },
+  "customer_repeat": {
+    "identified_customers": 155,
+    "repeat_customers": "114",
+    "repeat_customer_rate": "0.7355",
+    "identified_orders": "601",
+    "repeat_orders": "446",
+    "repeat_order_rate": "0.7421",
+    "repeat_customer_net_sales": "181871.00",
+    "average_orders_per_customer": "3.88",
+    "frequency_distribution": [
+      {
+        "frequency_band": "4+ orders",
+        "customer_count": 57
+      },
+      {
+        "frequency_band": "1 order",
+        "customer_count": 41
+      },
+      {
+        "frequency_band": "2-3 orders",
+        "customer_count": 57
+      }
+    ]
+  },
+  "menu_segments": {
+    "Dogs": 4,
+    "Stars": 3,
+    "Plowhorses": 2,
+    "Puzzles": 1
+  },
+  "checks": {
+    "net_sales_identity": true,
+    "hourly_share_sum": 1.0,
+    "repeat_rate_valid": true,
+    "all_menu_segments_present": true
+  }
+}

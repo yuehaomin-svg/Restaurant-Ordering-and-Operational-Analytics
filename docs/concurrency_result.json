@@ -1,0 +1,16 @@
+{
+  "created_orders": 1,
+  "conflicting_requests": 1,
+  "outcomes": [
+    {
+      "status": "conflict",
+      "status_code": 409,
+      "detail": "Dining table is not available"
+    },
+    {
+      "status": "created",
+      "order_id": 1002
+    }
+  ],
+  "passed": true
+}

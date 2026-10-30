@@ -1,0 +1,272 @@
+[
+  {
+    "scale_size": 1000,
+    "index_mode": "without_optional_indexes",
+    "query_name": "daily_sales",
+    "median_ms": 2.042,
+    "min_ms": 2.004,
+    "max_ms": 2.248,
+    "result_rows": 30
+  },
+  {
+    "scale_size": 1000,
+    "index_mode": "without_optional_indexes",
+    "query_name": "menu_performance",
+    "median_ms": 10.861,
+    "min_ms": 10.317,
+    "max_ms": 11.727,
+    "result_rows": 10
+  },
+  {
+    "scale_size": 1000,
+    "index_mode": "without_optional_indexes",
+    "query_name": "hourly_demand",
+    "median_ms": 1.733,
+    "min_ms": 1.629,
+    "max_ms": 2.159,
+    "result_rows": 7
+  },
+  {
+    "scale_size": 1000,
+    "index_mode": "without_optional_indexes",
+    "query_name": "recent_orders",
+    "median_ms": 1.806,
+    "min_ms": 1.736,
+    "max_ms": 2.048,
+    "result_rows": 50
+  },
+  {
+    "scale_size": 1000,
+    "index_mode": "without_optional_indexes",
+    "query_name": "customer_frequency",
+    "median_ms": 3.357,
+    "min_ms": 2.398,
+    "max_ms": 6.49,
+    "result_rows": 30
+  },
+  {
+    "scale_size": 1000,
+    "index_mode": "with_optional_indexes",
+    "query_name": "daily_sales",
+    "median_ms": 2.136,
+    "min_ms": 2.037,
+    "max_ms": 2.315,
+    "result_rows": 30
+  },
+  {
+    "scale_size": 1000,
+    "index_mode": "with_optional_indexes",
+    "query_name": "menu_performance",
+    "median_ms": 10.598,
+    "min_ms": 10.362,
+    "max_ms": 10.904,
+    "result_rows": 10
+  },
+  {
+    "scale_size": 1000,
+    "index_mode": "with_optional_indexes",
+    "query_name": "hourly_demand",
+    "median_ms": 1.97,
+    "min_ms": 1.818,
+    "max_ms": 2.74,
+    "result_rows": 7
+  },
+  {
+    "scale_size": 1000,
+    "index_mode": "with_optional_indexes",
+    "query_name": "recent_orders",
+    "median_ms": 1.875,
+    "min_ms": 1.79,
+    "max_ms": 1.967,
+    "result_rows": 50
+  },
+  {
+    "scale_size": 1000,
+    "index_mode": "with_optional_indexes",
+    "query_name": "customer_frequency",
+    "median_ms": 2.52,
+    "min_ms": 2.462,
+    "max_ms": 2.649,
+    "result_rows": 30
+  },
+  {
+    "scale_size": 10000,
+    "index_mode": "without_optional_indexes",
+    "query_name": "daily_sales",
+    "median_ms": 9.931,
+    "min_ms": 8.943,
+    "max_ms": 19.733,
+    "result_rows": 30
+  },
+  {
+    "scale_size": 10000,
+    "index_mode": "without_optional_indexes",
+    "query_name": "menu_performance",
+    "median_ms": 91.79,
+    "min_ms": 90.779,
+    "max_ms": 96.569,
+    "result_rows": 10
+  },
+  {
+    "scale_size": 10000,
+    "index_mode": "without_optional_indexes",
+    "query_name": "hourly_demand",
+    "median_ms": 8.284,
+    "min_ms": 7.447,
+    "max_ms": 10.92,
+    "result_rows": 7
+  },
+  {
+    "scale_size": 10000,
+    "index_mode": "without_optional_indexes",
+    "query_name": "recent_orders",
+    "median_ms": 5.981,
+    "min_ms": 5.519,
+    "max_ms": 6.47,
+    "result_rows": 50
+  },
+  {
+    "scale_size": 10000,
+    "index_mode": "without_optional_indexes",
+    "query_name": "customer_frequency",
+    "median_ms": 10.99,
+    "min_ms": 10.388,
+    "max_ms": 16.593,
+    "result_rows": 30
+  },
+  {
+    "scale_size": 10000,
+    "index_mode": "with_optional_indexes",
+    "query_name": "daily_sales",
+    "median_ms": 9.823,
+    "min_ms": 9.065,
+    "max_ms": 10.92,
+    "result_rows": 30
+  },
+  {
+    "scale_size": 10000,
+    "index_mode": "with_optional_indexes",
+    "query_name": "menu_performance",
+    "median_ms": 93.333,
+    "min_ms": 91.433,
+    "max_ms": 101.779,
+    "result_rows": 10
+  },
+  {
+    "scale_size": 10000,
+    "index_mode": "with_optional_indexes",
+    "query_name": "hourly_demand",
+    "median_ms": 8.051,
+    "min_ms": 7.505,
+    "max_ms": 10.163,
+    "result_rows": 7
+  },
+  {
+    "scale_size": 10000,
+    "index_mode": "with_optional_indexes",
+    "query_name": "recent_orders",
+    "median_ms": 6.802,
+    "min_ms": 5.51,
+    "max_ms": 11.52,
+    "result_rows": 50
+  },
+  {
+    "scale_size": 10000,
+    "index_mode": "with_optional_indexes",
+    "query_name": "customer_frequency",
+    "median_ms": 10.274,
+    "min_ms": 9.725,
+    "max_ms": 10.656,
+    "result_rows": 30
+  },
+  {
+    "scale_size": 50000,
+    "index_mode": "without_optional_indexes",
+    "query_name": "daily_sales",
+    "median_ms": 37.853,
+    "min_ms": 36.643,
+    "max_ms": 38.64,
+    "result_rows": 30
+  },
+  {
+    "scale_size": 50000,
+    "index_mode": "without_optional_indexes",
+    "query_name": "menu_performance",
+    "median_ms": 455.747,
+    "min_ms": 445.416,
+    "max_ms": 462.284,
+    "result_rows": 10
+  },
+  {
+    "scale_size": 50000,
+    "index_mode": "without_optional_indexes",
+    "query_name": "hourly_demand",
+    "median_ms": 32.475,
+    "min_ms": 31.526,
+    "max_ms": 36.2,
+    "result_rows": 7
+  },
+  {
+    "scale_size": 50000,
+    "index_mode": "without_optional_indexes",
+    "query_name": "recent_orders",
+    "median_ms": 21.733,
+    "min_ms": 21.334,
+    "max_ms": 22.745,
+    "result_rows": 50
+  },
+  {
+    "scale_size": 50000,
+    "index_mode": "without_optional_indexes",
+    "query_name": "customer_frequency",
+    "median_ms": 45.774,
+    "min_ms": 44.573,
+    "max_ms": 48.382,
+    "result_rows": 30
+  },
+  {
+    "scale_size": 50000,
+    "index_mode": "with_optional_indexes",
+    "query_name": "daily_sales",
+    "median_ms": 37.673,
+    "min_ms": 36.764,
+    "max_ms": 38.354,
+    "result_rows": 30
+  },
+  {
+    "scale_size": 50000,
+    "index_mode": "with_optional_indexes",
+    "query_name": "menu_performance",
+    "median_ms": 493.067,
+    "min_ms": 489.234,
+    "max_ms": 498.829,
+    "result_rows": 10
+  },
+  {
+    "scale_size": 50000,
+    "index_mode": "with_optional_indexes",
+    "query_name": "hourly_demand",
+    "median_ms": 31.984,
+    "min_ms": 30.903,
+    "max_ms": 34.222,
+    "result_rows": 7
+  },
+  {
+    "scale_size": 50000,
+    "index_mode": "with_optional_indexes",
+    "query_name": "recent_orders",
+    "median_ms": 22.503,
+    "min_ms": 21.367,
+    "max_ms": 33.454,
+    "result_rows": 50
+  },
+  {
+    "scale_size": 50000,
+    "index_mode": "with_optional_indexes",
+    "query_name": "customer_frequency",
+    "median_ms": 47.488,
+    "min_ms": 46.025,
+    "max_ms": 51.626,
+    "result_rows": 30
+  }
+]
