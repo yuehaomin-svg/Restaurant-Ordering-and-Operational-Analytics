@@ -33,6 +33,7 @@
 
 *   📊 **[1. 数据分析交互式看板复现 (Streamlit Live)](https://restaurant-ordering-and-operational-analytics-dcvtzkhr4wjycvp2.streamlit.app/)** 
     *无需本地部署，直接在线预览经营指标与 BI 报表。*
+    *看板托管在 Streamlit 免费社区版，若显示休眠，点击‘Yes, get this app back up!’即可唤醒，约30秒加载*
 *   🎬 **[2. 核心交易系统本地演示视频 (Watch Demo)](https://github.com/user-attachments/assets/e6e81f14-7902-4da3-9e34-9a920ceba7d4)** 
     *包含从开台、点餐到结账完整业务流，以及底层并发保护的交互演示。*
 *   🌐 **[3. 项目完整图文展示页 (Portfolio Page)](https://yuehaomin-svg.github.io/Restaurant-Ordering-and-Operational-Analytics/)** 
