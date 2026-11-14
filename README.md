@@ -1,4 +1,4 @@
-# 🍽️ Restaurant Ordering & Operational Analytics System
+#  Restaurant Ordering & Operational Analytics System
 ### 餐厅点餐管理系统与经营数据分析平台
 
 > **项目定位 / Project Positioning**
@@ -8,7 +8,7 @@
 
 ---
 
-## 💡 项目背景与产品初衷 (Business Value & Product Origin)
+## 项目背景与产品初衷 (Business Value & Product Origin)
 
 *   **源于真实痛点**：本项目的契机始于课程作业，但我将其延伸为一次完整的商业产品落地尝试。我有一位朋友家中经营传统餐厅，在交流中发现传统门店在数字化点餐、经营数据沉淀上存在明显的痛点。结合当前主流餐饮品牌的线上服务模式，我决定从零搭建一个涵盖“点单交易闭环 + 经营数据分析”的餐厅系统，以此探索技术如何真正赋能传统餐饮业务。
 *   **产品落地与成本取舍（MVP策略）**：系统不仅实现了前端的点餐、结账、退款等核心交易逻辑，还涵盖了后端的菜品管理、桌台状态流转。考虑到云服务器成本，核心交易系统目前在本地完成全链路验证，并提供三种展示方式
@@ -16,7 +16,7 @@
 
 ---
 
-## 🛠️ 工程严谨性与技术架构 (Engineering Rigor & Architecture)
+## 工程严谨性与技术架构 (Engineering Rigor & Architecture)
 
 为了支撑上述复杂的业务分析，底层需要一个极其稳固的数据库底座：
 
@@ -27,22 +27,22 @@
 
 ---
 
-## 🚀 交互与演示 (Demo & Showcases)
+## 交互与演示 (Demo & Showcases)
 
 考虑到为了更直观地展示项目成果，我准备了以下三种体验方式：
 
-*   📊 **[1. 数据分析交互式看板复现 (Streamlit Live)](https://restaurant-ordering-and-operational-analytics-dcvtzkhr4wjycvp2.streamlit.app/)** 
+*    **[1. 数据分析交互式看板复现 (Streamlit Live)](https://restaurant-ordering-and-operational-analytics-dcvtzkhr4wjycvp2.streamlit.app/)** 
     *无需本地部署，直接在线预览经营指标与 BI 报表。*
     *看板托管在 Streamlit 免费社区版，若显示休眠，点击‘Yes, get this app back up!’即可唤醒，约30秒加载*
-*   🎬 **[2. 核心交易系统本地演示视频 (Watch Demo)](https://github.com/user-attachments/assets/e6e81f14-7902-4da3-9e34-9a920ceba7d4)** 
+*    **[2. 核心交易系统本地演示视频 (Watch Demo)](https://github.com/user-attachments/assets/e6e81f14-7902-4da3-9e34-9a920ceba7d4)** 
     *包含从开台、点餐到结账完整业务流，以及底层并发保护的交互演示。*
-*   🌐 **[3. 项目完整图文展示页 (Portfolio Page)](https://yuehaomin-svg.github.io/Restaurant-Ordering-and-Operational-Analytics/)** 
+*    **[3. 项目完整图文展示页 (Portfolio Page)](https://yuehaomin-svg.github.io/Restaurant-Ordering-and-Operational-Analytics/)** 
     *包含更详细的架构图、指标口径说明与业务洞察报告。*
 
 ---
 ---
 
-## 📁 仓库结构 (Repository Structure)
+## 仓库结构 (Repository Structure)
 
 ```text
 app/
